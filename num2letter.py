@@ -29,8 +29,7 @@ def numero_to_letras(numero):
 		if num == 1000000000:
 			numero_letras = "UN BILLÓN"
 		
-	print ('numero: '),numero
-	print (numero_letras)
+	return numero_letras
  
  
 def convierte_cifra(numero, sw):
