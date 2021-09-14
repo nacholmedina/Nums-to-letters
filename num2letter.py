@@ -75,10 +75,5 @@ def convierte_cifra(numero, sw):
  
 	return "%s %s %s" %(texto_centena,texto_decena,texto_unidad)
 
-continuous = 1
 
-while continuous == 1:	
-	num = int(input("Ingrese un número: "))
-	numero_to_letras(num)
-	
 
