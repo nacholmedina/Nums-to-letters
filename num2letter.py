@@ -2,14 +2,14 @@
 
 def numero_to_letras(numero):
 	indicador = [("",""),("MIL","MIL"),("MILLON","MILLONES"),("MIL","MIL")]
-	entero = int(numero)
+	num = int(numero)
 	 
 	contador = 0
 	numero_letras = ""
 	if num == 0:
 			numero_letras = "CERO"
-	while entero >0:
-		a = entero % 1000
+	while num >0:
+		a = num % 1000
 		if contador == 0:
 			en_letras = convierte_cifra(a,1).strip()
 		else :
@@ -25,7 +25,7 @@ def numero_to_letras(numero):
 			numero_letras = en_letras+" "+indicador[contador][1]+" "+numero_letras
 		numero_letras = numero_letras.strip()
 		contador = contador + 1
-		entero = int(entero / 1000)
+		num = int(num / 1000)
 		if num == 1000000000:
 			numero_letras = "UN BILLÓN"
 		
